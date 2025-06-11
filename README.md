@@ -1,6 +1,6 @@
 # YouGotMail
 
-*The future of open-source SMTP servers—built with Node.js and nodemailer.*
+*Open Source SMTP server built with Node.js and nodemailer.*
 
 ## 📖 Table of Contents
 
@@ -13,9 +13,13 @@
 7. [Contributing](#contributing)
 8. [License](#license)
 
+<a id="description"></a>
+
 ## 📝 Description
 
 **YouGotMail** is an open-source SMTP server built with **Node.js** and **nodemailer**, offering fast, flexible email delivery. Ideal for notification systems, newsletter automation, and custom email workflows.
+
+<a id="features"></a>
 
 ## 🚀 Features
 
@@ -24,15 +28,21 @@
 * Clean separation of backend and frontend code.
 * Modular architecture ready for extension.
 
+<a id="live-demo"></a>
+
 ## 🎥 Live Demo
 
 > *Coming soon*: dashboard access and delivery metrics.
+
+<a id="technologies"></a>
 
 ## 🛠 Technologies
 
 * **Backend**: Node.js, Express, nodemailer, CORS, dotenv.
 * **Frontend**: React.js, Vite, Axios, ESLint, React Hooks.
 * **Development**: nodemon, vite, ESLint plugins.
+
+<a id="quick-install"></a>
 
 ## ⚙️ Quick Install
 
@@ -53,7 +63,28 @@ npm install axios react react-dom
 npm install --save-dev @eslint/js @types/react @types/react-dom @vitejs/plugin-react eslint eslint-plugin-react-hooks eslint-plugin-react-refresh globals vite
 ```
 
+<a id="how-to-use"></a>
+
 ## ▶️ How to Use
+
+### Backend (Server Side)
+
+### Configure server port in `.env`:
+
+```ini
+PORT=4000  
+```
+
+Default: `http://localhost:4000`
+
+### Configure SMTP credentials in `.env`:
+
+```ini
+SMTP_HOST=smtp.example.com
+SMTP_PORT=587
+SMTP_USER=user@example.com
+SMTP_PASS=supersecret
+```
 
 ### Start Backend
 
@@ -62,16 +93,7 @@ cd server
 npm start
 ```
 
-Default: `http://localhost:3000`
-
-Configure SMTP credentials in `.env`:
-
-  ```ini
-  SMTP_HOST=smtp.example.com
-  SMTP_PORT=587
-  SMTP_USER=user@example.com
-  SMTP_PASS=supersecret
-  ```
+### Frontend (Client Side)
 
 ### Start Frontend
 
@@ -82,7 +104,7 @@ npm run dev
 
 Default: `http://localhost:5173`
 
-Update API URL in `src/config.js` if needed.
+<a id="contributing"></a>
 
 ## 🤝 Contributing
 
@@ -91,7 +113,9 @@ Update API URL in `src/config.js` if needed.
 3. Push to branch: `git push origin feature/your-feature`.
 4. Open a Pull Request.
 
-> Contributions drive YouGotMail to the future! 🚀
+> Contributions open! 🚀
+
+<a id="license"></a>
 
 ## 📝 License
 
