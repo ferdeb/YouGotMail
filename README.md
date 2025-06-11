@@ -1,47 +1,98 @@
 # YouGotMail
 
-Open Source SMTP Node mail server
+*The future of open-source SMTP servers—built with Node.js and nodemailer.*
 
-Dependencias del server
+## 📖 Table of Contents
 
-npm install cors - Cross-Origin Resource Sharing (CORS)
-npm install dotenv - Variables de entorno
-npm install express - Framework web para Node.js
-npm install nodemailer - Envío de emails
-npm install nodemon - Reinicio automático del servidor durante desarrollo
+1. [Description](#description)
+2. [Features](#features)
+3. [Live Demo](#live-demo)
+4. [Technologies](#technologies)
+5. [Quick Install](#quick-install)
+6. [How to Use](#how-to-use)
+7. [Contributing](#contributing)
+8. [License](#license)
 
-Instalacion rapida:
+## 📝 Description
 
+**YouGotMail** is an open-source SMTP server built with **Node.js** and **nodemailer**, offering fast, flexible email delivery. Ideal for notification systems, newsletter automation, and custom email workflows.
+
+## 🚀 Features
+
+* Configurable SMTP transport for customizable email sending.
+* CORS support and environment variables for scalability.
+* Clean separation of backend and frontend code.
+* Modular architecture ready for extension.
+
+## 🎥 Live Demo
+
+> *Coming soon*: dashboard access and delivery metrics.
+
+## 🛠 Technologies
+
+* **Backend**: Node.js, Express, nodemailer, CORS, dotenv.
+* **Frontend**: React.js, Vite, Axios, ESLint, React Hooks.
+* **Development**: nodemon, vite, ESLint plugins.
+
+## ⚙️ Quick Install
+
+> **Prerequisite**: Node.js and npm installed.
+
+### Backend Setup
+
+```bash
+cd server
 npm install cors dotenv express nodemailer nodemon
+```
 
-Iniciar el servidor usando:
+### Frontend Setup
 
-npm start
-
-Dependencias del frontend
-
-npm install axios - Cliente HTTP para realizar peticiones
-npm install react - Biblioteca principal de React
-npm install react-dom - Renderizado de React para el navegador
-
-Dependencias de desarrollo
-
-npm install --save-dev @eslint/js - Configuración base de ESLint
-npm install --save-dev @types/react - Tipos de TypeScript para React
-npm install --save-dev @types/react-dom - Tipos de TypeScript para ReactDOM
-npm install --save-dev @vitejs/plugin-react - Plugin de Vite para React
-npm install --save-dev eslint - Herramienta de linting
-npm install --save-dev eslint-plugin-react-hooks - Reglas de ESLint para React Hooks
-npm install --save-dev eslint-plugin-react-refresh - Plugin de ESLint para React Refresh
-npm install --save-dev globals - Variables globales para ESLint
-npm install --save-dev vite - Herramienta de desarrollo y construcción
-
-Instalacion rapida:
-
+```bash
+cd client
 npm install axios react react-dom
-
 npm install --save-dev @eslint/js @types/react @types/react-dom @vitejs/plugin-react eslint eslint-plugin-react-hooks eslint-plugin-react-refresh globals vite
+```
 
-Iniciar el frontend usando:
+## ▶️ How to Use
 
+### Start Backend
+
+```bash
+cd server
+npm start
+```
+
+Default: `http://localhost:3000`
+
+Configure SMTP credentials in `.env`:
+
+  ```ini
+  SMTP_HOST=smtp.example.com
+  SMTP_PORT=587
+  SMTP_USER=user@example.com
+  SMTP_PASS=supersecret
+  ```
+
+### Start Frontend
+
+```bash
+cd client
 npm run dev
+```
+
+Default: `http://localhost:5173`
+
+Update API URL in `src/config.js` if needed.
+
+## 🤝 Contributing
+
+1. Fork and create a branch: `git checkout -b feature/your-feature`.
+2. Commit changes: `git commit -m "feat: concise description"`.
+3. Push to branch: `git push origin feature/your-feature`.
+4. Open a Pull Request.
+
+> Contributions drive YouGotMail to the future! 🚀
+
+## 📝 License
+
+MIT © 2025 YouGotMail
