@@ -1,3 +1,4 @@
+require('dotenv').config();    
 const nodemailer = require("nodemailer");
 
 //Configuracion del entorno de nodemailer, configurar con los datos del negocio en .env
@@ -17,3 +18,6 @@ transporter
 .catch((error) => console.error(error));
 
 module.exports = transporter;
+
+
+// Checar el metodo OAuth2 de las docs de nodemailer
